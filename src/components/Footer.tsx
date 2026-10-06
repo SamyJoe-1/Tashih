@@ -10,7 +10,7 @@ export function Footer() {
       <div className="relative mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <Logo tone="mint" className="h-16 w-32" />
-          <p className="mt-4 max-w-sm leading-8">
+          <p className="mt-0 max-w-sm leading-8">
             اعرف صحة الحديث قبل أن تنشره. الحكم يأتي من المصدر الحديثي دائماً، لا من النموذج اللغوي.
           </p>
           <p className="mt-6 inline-block rounded-full border border-mint-400/30 px-4 py-1.5 text-sm text-mint-300">
@@ -19,7 +19,7 @@ export function Footer() {
           <a
             href="/downloads/tashih.apk"
             download
-            className="mt-5 flex w-fit items-center gap-3 rounded-2xl bg-mint-400 px-6 py-3.5 font-bold text-night-900 shadow-lg shadow-mint-500/30 transition-colors hover:bg-mint-300"
+            className="mt-5 flex w-fit items-center gap-3 rounded-2xl bg-mint-400 px-6 py-2 font-bold text-night-900 shadow-lg shadow-mint-500/30 transition-colors hover:bg-mint-300"
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" /></svg>
             <span className="flex flex-col leading-tight">
