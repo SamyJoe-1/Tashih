@@ -16,6 +16,17 @@ export function Footer() {
           <p className="mt-6 inline-block rounded-full border border-mint-400/30 px-4 py-1.5 text-sm text-mint-300">
             المسار الأول: الحوار المعرفي والإجابات الموثقة
           </p>
+          <a
+            href="/downloads/tashih.apk"
+            download
+            className="mt-5 flex w-fit items-center gap-3 rounded-2xl bg-mint-400 px-6 py-3.5 font-bold text-night-900 shadow-lg shadow-mint-500/30 transition-colors hover:bg-mint-300"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" /></svg>
+            <span className="flex flex-col leading-tight">
+              <span className="text-xs font-medium opacity-70">متوفر الآن للأندرويد</span>
+              <span>حمّل التطبيق (APK)</span>
+            </span>
+          </a>
         </div>
         <div>
           <h3 className="mb-4 font-bold text-white">المنصة</h3>
@@ -40,7 +51,6 @@ export function Footer() {
             {LEGAL.map((n) => (
               <li key={n.href}><Link href={n.href} className="hover:text-mint-300">{n.label}</Link></li>
             ))}
-            <li><a href="/downloads/tashih.apk" download className="font-bold text-mint-300 hover:text-white">تحميل تطبيق الأندرويد (APK)</a></li>
             <li><a href="/sitemap.xml" className="hover:text-mint-300">خريطة الموقع</a></li>
           </ul>
         </div>
