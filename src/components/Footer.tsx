@@ -13,7 +13,7 @@ export function Footer() {
           <p className="mt-0 max-w-sm leading-8">
             اعرف صحة الحديث قبل أن تنشره. الحكم يأتي من المصدر الحديثي دائماً، لا من النموذج اللغوي.
           </p>
-          <p className="mt-6 inline-block rounded-full border border-mint-400/30 px-4 py-1.5 text-sm text-mint-300">
+          <p className="mt-2 inline-block rounded-full border border-mint-400/30 px-4 py-1.5 text-sm text-mint-300">
             المسار الأول: الحوار المعرفي والإجابات الموثقة
           </p>
           <a
