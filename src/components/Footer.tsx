@@ -40,6 +40,7 @@ export function Footer() {
             {LEGAL.map((n) => (
               <li key={n.href}><Link href={n.href} className="hover:text-mint-300">{n.label}</Link></li>
             ))}
+            <li><a href="/downloads/tashih.apk" download className="font-bold text-mint-300 hover:text-white">تحميل تطبيق الأندرويد (APK)</a></li>
             <li><a href="/sitemap.xml" className="hover:text-mint-300">خريطة الموقع</a></li>
           </ul>
         </div>

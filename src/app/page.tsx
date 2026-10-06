@@ -34,6 +34,14 @@ export default async function Home() {
               <p className="mt-5 text-xl text-white/80">
                 الصق الحديث... واحصل على حكمه ومصدره في ثوانٍ. دون تخمين.
               </p>
+              <a
+                href="/downloads/tashih.apk"
+                download
+                className="mt-7 inline-flex items-center gap-3 rounded-full bg-mint-400 px-6 py-3 font-bold text-night-900 shadow-lg shadow-mint-500/30 transition-colors hover:bg-mint-300"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" /></svg>
+                حمّل تطبيق الأندرويد (APK)
+              </a>
               <div className="mt-9 max-w-2xl">
                 <SearchBox dark />
                 <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
