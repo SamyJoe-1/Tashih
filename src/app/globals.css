@@ -1,26 +1,80 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --font-sans: var(--font-plex), ui-sans-serif, system-ui, sans-serif;
+  --font-naskh: var(--font-amiri), serif;
+  --font-weight-medium: 400;
+  --font-weight-semibold: 700;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Palette taken from the Tashih deck */
+  --color-night-950: #021a11;
+  --color-night-900: #04261a;
+  --color-night-800: #073524;
+  --color-night-700: #0b4d33;
+  --color-mint-300: #8cf0c0;
+  --color-mint-400: #4fe0a0;
+  --color-mint-500: #2fcf8a;
+  --color-brand-500: #17a160;
+  --color-brand-600: #0f7a48;
+  --color-brand-700: #0b6b3f;
+  --color-paper: #f4f9f6;
+  --color-ink: #0d2a1e;
+  --color-muted: #50625a;
+  --color-line: #dbe8e1;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --color-sahih: #17a160;
+  --color-daif: #e3a008;
+  --color-mawdu: #d93a3a;
+  --color-unclear: #8a8f8c;
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-float: float 7s ease-in-out infinite;
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  html { scroll-behavior: smooth; overflow-x: clip; }
+  body { overflow-x: clip; }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--color-mint-400); color: var(--color-night-900); }
+  :focus-visible { outline: 2px solid var(--color-mint-500); outline-offset: 3px; border-radius: 6px; }
+}
+
+@utility logo-mask {
+  -webkit-mask: var(--logo-url, url("/brand/tashih-logo.webp")) center / contain no-repeat;
+  mask: var(--logo-url, url("/brand/tashih-logo.webp")) center / contain no-repeat;
+  aspect-ratio: 2 / 1;
+}
+
+/* Interlaced-circles pattern, as in the deck backgrounds */
+@utility pattern-light {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%230b6b3f' stroke-opacity='.07' stroke-width='1.2'%3E%3Ccircle cx='0' cy='0' r='60'/%3E%3Ccircle cx='120' cy='0' r='60'/%3E%3Ccircle cx='0' cy='120' r='60'/%3E%3Ccircle cx='120' cy='120' r='60'/%3E%3Ccircle cx='60' cy='60' r='60'/%3E%3C/g%3E%3C/svg%3E");
+}
+@utility pattern-dark {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%234fe0a0' stroke-opacity='.07' stroke-width='1.2'%3E%3Ccircle cx='0' cy='0' r='60'/%3E%3Ccircle cx='120' cy='0' r='60'/%3E%3Ccircle cx='0' cy='120' r='60'/%3E%3Ccircle cx='120' cy='120' r='60'/%3E%3Ccircle cx='60' cy='60' r='60'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+@utility card {
+  background: white;
+  border: 1px solid var(--color-line);
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 2px rgb(4 38 26 / 0.04), 0 10px 30px -14px rgb(4 38 26 / 0.14);
+}
+
+@utility hadith {
+  font-family: var(--font-naskh);
+  line-height: 2.15;
 }
