@@ -43,7 +43,7 @@ export function ContactLine() {
       للتواصل بشأن هذه الصفحة: <a className="font-semibold text-brand-700 underline" href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>
     </p>
   ) : (
-    <p>للتواصل بشأن هذه الصفحة راسل فريق تصحيح عبر قنوات التحدي الرسمية.</p>
+    <p>للتواصل بشأن هذه الصفحة راسل فريق تصحيح.</p>
   );
 }
 

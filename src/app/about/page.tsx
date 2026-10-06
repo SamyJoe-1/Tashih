@@ -4,12 +4,12 @@ import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { PageHero, Section } from "@/components/ui";
 
-export const metadata: Metadata = pageMeta("/about", "عن المشروع", "تصحيح: مشروع مشارك في تحدي الذكاء الاصطناعي في خدمة المحتوى الإسلامي.");
+export const metadata: Metadata = pageMeta("/about", "عن المشروع", "تصحيح: منصة للتحقق من صحة الأحاديث النبوية بالرجوع إلى المصادر الحديثية.");
 
 export default function AboutPage() {
   return (
     <>
-      <PageHero path="/about" eyebrow="عن المشروع" title="تصحيح" lead="مشروع مشارك في «تحدي الذكاء الاصطناعي في خدمة المحتوى الإسلامي» — المسار الأول: الحوار المعرفي والإجابات الموثقة." />
+      <PageHero path="/about" eyebrow="عن المشروع" title="تصحيح" lead="منصة للتحقق من صحة الأحاديث النبوية بالرجوع إلى المصادر الحديثية، وإجابات موثقة بالمصدر." />
       <div className="pattern-light">
         <Section>
           <div className="grid items-start gap-10 lg:grid-cols-[1fr_20rem]">
@@ -31,7 +31,6 @@ export default function AboutPage() {
               <Logo tone="mint" className="mx-auto h-24 w-48" />
               <p className="mt-4 text-white/75">اعرف صحة الحديث قبل أن تنشره</p>
               <p className="mt-6 text-sm text-mint-300">فريق تصحيح | ٢٠٢٦م</p>
-              <p className="mt-1 text-xs text-white/50">مؤسسة بادل الأهلية</p>
               <Link href="/verify" className="mt-8 inline-block rounded-full bg-mint-400 px-6 py-3 font-bold text-night-900 hover:bg-mint-300">جرّب الآن</Link>
             </aside>
           </div>

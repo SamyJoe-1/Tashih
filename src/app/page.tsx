@@ -22,10 +22,7 @@ export default async function Home() {
         <div className="absolute -start-48 top-40 -z-10 h-[34rem] w-[34rem] rounded-full bg-mint-500/25 blur-[120px]" />
 
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
-          <p className="text-sm font-medium text-mint-300">
-            مشروع مشارك في تحدي الذكاء الاصطناعي في خدمة المحتوى الإسلامي
-          </p>
-          <div className="mt-6 grid items-start gap-10 lg:grid-cols-[1.25fr_1fr]">
+          <div className="grid items-start gap-10 lg:grid-cols-[1.25fr_1fr]">
             <div>
               <Logo tone="mint" className="h-36 w-72 drop-shadow-[0_0_40px_rgba(79,224,160,0.35)] sm:h-44 sm:w-88" />
               <h1 className="mt-6 text-4xl leading-tight font-bold sm:text-6xl">
@@ -71,7 +68,6 @@ export default async function Home() {
         </div>
         <div className="absolute inset-x-0 bottom-0">
           <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 border-t border-mint-400/20 px-4 py-5 text-sm text-mint-300 sm:px-6">
-            <span>المسار الأول: الحوار المعرفي والإجابات الموثقة</span>
             <a href="/downloads/tashih.apk" download className="inline-flex items-center gap-1.5 text-white/70 underline-offset-4 hover:text-mint-300 hover:underline">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" /></svg>
               تحميل تطبيق الأندرويد

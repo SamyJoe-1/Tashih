@@ -13,9 +13,6 @@ export function Footer() {
           <p className="mt-0 max-w-sm leading-8">
             اعرف صحة الحديث قبل أن تنشره. الحكم يأتي من المصدر الحديثي دائماً، لا من النموذج اللغوي.
           </p>
-          <p className="mt-2 inline-block rounded-full border border-mint-400/30 px-4 py-1.5 text-sm text-mint-300">
-            المسار الأول: الحوار المعرفي والإجابات الموثقة
-          </p>
           <a
             href="/downloads/tashih.apk"
             download
@@ -57,7 +54,7 @@ export function Footer() {
       </div>
       <div className="relative border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-6 text-sm sm:flex-row sm:justify-between sm:px-6">
-          <span>تصحيح | تحدي الذكاء الاصطناعي في خدمة المحتوى الإسلامي | مؤسسة بادل الأهلية</span>
+          <span>تصحيح | اعرف صحة الحديث قبل أن تنشره</span>
           <span>فريق تصحيح © ٢٠٢٦م</span>
         </div>
       </div>
