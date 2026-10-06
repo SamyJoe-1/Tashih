@@ -34,14 +34,6 @@ export default async function Home() {
               <p className="mt-5 text-xl text-white/80">
                 الصق الحديث... واحصل على حكمه ومصدره في ثوانٍ. دون تخمين.
               </p>
-              <a
-                href="/downloads/tashih.apk"
-                download
-                className="mt-7 inline-flex items-center gap-3 rounded-full bg-mint-400 px-6 py-3 font-bold text-night-900 shadow-lg shadow-mint-500/30 transition-colors hover:bg-mint-300"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" /></svg>
-                حمّل تطبيق الأندرويد (APK)
-              </a>
               <div className="mt-9 max-w-2xl">
                 <SearchBox dark />
                 <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
@@ -80,6 +72,10 @@ export default async function Home() {
         <div className="absolute inset-x-0 bottom-0">
           <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 border-t border-mint-400/20 px-4 py-5 text-sm text-mint-300 sm:px-6">
             <span>المسار الأول: الحوار المعرفي والإجابات الموثقة</span>
+            <a href="/downloads/tashih.apk" download className="inline-flex items-center gap-1.5 text-white/70 underline-offset-4 hover:text-mint-300 hover:underline">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" /></svg>
+              تحميل تطبيق الأندرويد
+            </a>
             <span className="text-white/60">فريق تصحيح | ٢٠٢٦م</span>
           </div>
         </div>
