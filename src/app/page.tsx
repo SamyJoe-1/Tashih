@@ -68,8 +68,8 @@ export default async function Home() {
         </div>
         <div className="absolute inset-x-0 bottom-0">
           <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 border-t border-mint-400/20 px-4 py-5 text-sm text-mint-300 sm:px-6">
-            <a href="/downloads/tashih.apk" download className="inline-flex items-center gap-1.5 text-white/70 underline-offset-4 hover:text-mint-300 hover:underline">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" /></svg>
+            <a href="/downloads/tashih.apk" download className="inline-flex items-center gap-2 rounded-full bg-mint-400 px-4 py-1.5 font-bold text-night-900 shadow-md shadow-mint-500/30 transition-colors hover:bg-mint-300">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" /></svg>
               تحميل تطبيق الأندرويد
             </a>
             <span className="text-white/60">فريق تصحيح | ٢٠٢٦م</span>
